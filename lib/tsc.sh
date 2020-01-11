@@ -50,5 +50,6 @@ compile_ts() {
     echo "Using configuration at $TSC_CONFIG"
 
     cd "$build_dir"
-    ./node_modules/.bin/tsc --pretty --project $TSC_CONFIG
+    # ./node_modules/.bin/tsc --pretty --project $TSC_CONFIG
+    yarn run build
 }
